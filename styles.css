@@ -1,0 +1,95 @@
+
+html {
+    font: 20px Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  .structural {
+    margin: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav li a {
+    padding: 1em;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  header {
+    display: flex;
+    flex: 1 10%;
+  }
+  
+  .structural nav {
+    display: flex;
+    flex: 1 5%;
+  }
+  
+  main {
+    display: flex;
+    flex: 2 1 70%;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  aside {
+    display: flex;
+    flex: 1 2 30%;
+    margin: 1rem;
+  }
+  
+  footer {
+    display: flex;
+    flex: 1 5%;
+  }
+  
+  main#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 X 2 grid */
+    gap: 1rem;
+  }
+  
+  main#gallery figure {
+    border: 1px solid #000;
+    padding: 10px;
+  }
+  
+  main#gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  main#gallery figcaption {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 1200px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 10px;
+    }
+    main#gallery {
+      grid-template-columns: 1fr; /* Reduce grid to 1 column */
+    }
+  }
+  
