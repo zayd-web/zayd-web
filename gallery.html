@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+  
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    nav ul li a {
+      padding: 1em;
+    }
+
+    .structural {
+      margin: 1rem;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    figure {
+      flex: 1 0 calc(50% - 10px);
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 1200px) {
+      html {
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      html {
+        font-size: 10px;
+      }
+
+      /* Adjust grid to single column for smaller screens */
+      section {
+        flex-direction: column;
+      }
+
+      figure {
+        flex: 1 0 calc(100% - 20px);
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Our Gallery</h1>
+  </header>
+
+  <nav class="structural">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <figure>
+      <img src="/Users/zaydmohamed/Downloads/images 2/html.png" alt="Image 1 Description">
+      <figcaption> HTML</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/Users/zaydmohamed/Downloads/images 2/css.jpg" alt="Image 2 Description">
+      <figcaption>CSS</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/Users/zaydmohamed/Downloads/images 2/git-github.png" alt="Image 3 Description">
+      <figcaption>GIT HUB</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/Users/zaydmohamed/Downloads/images 2/vscode_background.jpg" alt="Image 4 Description">
+      <figcaption>VS CODE</figcaption>
+    </figure>
+  </section>
+</body>
+
+</html>
